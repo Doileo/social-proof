@@ -33,9 +33,12 @@ p {
 
 /* set up the body */
 body {
-    line-height: 1.5;
     min-height: 100vh; /* it prevents short pages */
     font-family: 'League Spartan', sans-serif;
+    font-size: 0.9375rem;
+    color: hsl( var(--clr-grayish-violet) );
+    overflow-x: hidden;
+    position: relative;
 }
 
 /* make images easier to work with */
@@ -78,6 +81,13 @@ select {
     gap: var(--gap, 1rem);
 }
 
+.wrapper {
+    padding-inline: 2em;
+    padding-bottom: 3.5rem;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
 /* colors */
 .text-dark { color: hsl( var(--clr-dark-violet) ); }
 .text-grayish { color: hsl( var(--clr-grayish-violet) ); }
@@ -87,3 +97,54 @@ select {
 /* typography */
 
 .capitalize { text-transform: capitalize; }
+
+/* Container's styles */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-pattern-top-mobile.svg), 
+        url(../images/bg-pattern-bottom-mobile.svg);
+    background-position: top 0 right 0, bottom 0 right 0;
+    background-repeat: no-repeat;
+}
+
+.page-title {
+    padding: 3.5rem 0 1.5rem 0;
+    font-size: 3rem;
+    text-align: center;
+    color: hsl( var(--clr-dark-violet) );
+}
+
+.page-description {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 1rem 0 2rem 0;
+}
+
+.review-container {
+    padding-block: 2rem;
+    margin-inline: auto;
+}
+
+.review {
+    display: grid;
+    gap: var(--gap, 0.5rem);
+    justify-items: center;
+    align-items: center;
+    width: 22rem;
+    height: 5.15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: hsl( var(--clr-light-violet));
+}
+
+.details {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
