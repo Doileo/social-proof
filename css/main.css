@@ -88,6 +88,10 @@ select {
     max-width: 80rem;
 }
 
+.first-paragraph { padding: 10px 0 10px 50px }
+.second-paragraph { padding: 0 0 10px 50px }
+.third-paragraph { padding: 15px 0 10px 0 }
+
 /* colors */
 .text-dark { color: hsl( var(--clr-dark-violet) ); }
 .text-grayish { color: hsl( var(--clr-grayish-violet) ); }
@@ -125,9 +129,10 @@ select {
     padding: 1rem 0 2rem 0;
 }
 
-.review-container {
-    padding-block: 2rem;
-    margin-inline: auto;
+.review-container,
+.buyers-container,
+.attribution {
+    padding: 2rem 2rem 0 2rem;
 }
 
 .review {
@@ -146,5 +151,42 @@ select {
     font-weight: 700;
     font-size: 1.2rem;
 }
+
+.buyer {
+    width: 22rem;
+    height: 15.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: hsl( var(--clr-dark-violet));
+}
+
+.avatar-image {
+    float: left;
+    margin-top: 8px;
+    width: 2.1rem;
+    border: none;
+    border-radius: 50%;
+}
+
+.third-paragraph {
+    line-height: 1.5rem;
+}
+
+.attribution {
+    width: 100%;
+    height: 60px;
+}
+ 
+ .attribution p { 
+     font-size: 11px; 
+     text-align: center; 
+ }
+ 
+ .attribution a {
+     color: hsl(333, 80%, 67%); 
+     text-decoration: none;
+ }
+
+
 
 
