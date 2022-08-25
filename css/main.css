@@ -130,7 +130,6 @@ select {
 }
 
 .review-container,
-.buyers-container,
 .attribution {
     padding: 2rem 2rem 0 2rem;
 }
@@ -150,6 +149,10 @@ select {
 .details {
     font-weight: 700;
     font-size: 1.2rem;
+}
+
+.buyers-container {
+    padding: 4rem, 2rem, 0, 2rem;
 }
 
 .buyer {
