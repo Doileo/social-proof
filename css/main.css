@@ -180,15 +180,19 @@ select {
     height: 60px;
 }
  
- .attribution p { 
-     font-size: 11px; 
-     text-align: center; 
- }
+.attribution p { 
+    font-size: 11px; 
+    text-align: center; 
+}
  
- .attribution a {
-     color: hsl(333, 80%, 67%); 
-     text-decoration: none;
- }
+.attribution a {
+    color: hsl(333, 80%, 67%); 
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    
+}
 
 
 
