@@ -126,7 +126,7 @@ select {
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.5rem;
-    padding: 1rem 0 2rem 0;
+    padding: 1rem 2rem 2rem 2rem;
 }
 
 .review-container,
@@ -191,7 +191,64 @@ select {
 }
 
 @media only screen and (min-width: 1200px) {
-    
+   .wrapper {
+    margin: 10vh 12vw;
+    height: 90vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+         "description-container"
+         "buyers-container"
+   }
+
+   .description-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "top-left top-right";
+    grid-area: description-container;
+   }
+
+   .description-details {
+    grid-area: top-left;
+   }
+
+   .page-title,
+   .page-description {
+    text-align: left;
+   }
+
+   .page-description {
+    padding: 0.5rem 0 2rem 0;
+   }
+
+   .review-container {
+    grid-area: top-right;
+    padding: 3.5rem 0 0 8rem;
+   }
+
+   .review {
+    display: flex;
+    justify-content: space-evenly;
+    height: 3.8rem;
+    width: 28rem;
+   }
+
+   .first-review {
+    margin-left: 1vw;
+   }
+
+   .second-review {
+    margin-left: 4.5vw;
+   }
+
+   .third-review {
+    margin-left: 7.5vw;
+   }
+
+
 }
 
 
