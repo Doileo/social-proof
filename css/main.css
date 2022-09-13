@@ -103,15 +103,18 @@ select {
 .capitalize { text-transform: capitalize; }
 
 /* Container's styles */
+body {
+    background-image: url(../images/bg-pattern-top-mobile.svg), 
+        url(../images/bg-pattern-bottom-mobile.svg);
+    background-position: top 0 right 0, bottom 0 right 0;
+    background-repeat: no-repeat;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/bg-pattern-top-mobile.svg), 
-        url(../images/bg-pattern-bottom-mobile.svg);
-    background-position: top 0 right 0, bottom 0 right 0;
-    background-repeat: no-repeat;
 }
 
 .page-title {
@@ -191,6 +194,15 @@ select {
 }
 
 @media only screen and (min-width: 1200px) {
+
+    body {
+        background-image: url(../images/bg-pattern-top-mobile.svg), 
+        url(../images/bg-pattern-bottom-mobile.svg);
+        background-size: 580px 380px, 1200px 720px;
+        background-repeat: no-repeat;
+        background-position: top left, bottom right;
+    }
+
    .wrapper {
     margin: 10vh 12vw;
     height: 90vh;
@@ -248,7 +260,43 @@ select {
     margin-left: 7.5vw;
    }
 
+   .buyers-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "first-buyer second-buyer third-buyer";
+    grid-area: buyers-container;
+    padding: 3rem 0 0 0;
+   }
 
+   .first-buyer {
+    grid-area: down-left;
+   }
+
+   .second {
+    margin-top: 1.5rem;
+   }
+
+   .second-buyer {
+    grid-area: down-center;
+   }
+
+   .third {
+    margin-top: 3rem;
+   }
+
+   .third-buyer {
+    grid-area: down-right;
+   }
+
+   .attribution {
+    text-align: center;
+   }
+
+   .attribution a:hover {
+    color: hsl(333, 49%, 43%);
+   }
 }
 
 
