@@ -181,6 +181,7 @@ body {
 .attribution {
     width: 100%;
     height: 60px;
+    text-align: center;
 }
  
 .attribution p { 
@@ -288,10 +289,6 @@ body {
 
    .third-buyer {
     grid-area: down-right;
-   }
-
-   .attribution {
-    text-align: center;
    }
 
    .attribution a:hover {
