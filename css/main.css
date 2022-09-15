@@ -190,7 +190,7 @@ body {
 }
  
 .attribution a {
-    color: hsl(333, 80%, 67%); 
+    color: hsl( var(--clr-soft-pink) );
     text-decoration: none;
 }
 
